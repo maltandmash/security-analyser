@@ -1,0 +1,10 @@
+{
+  "name": "security-review",
+  "version": "1.0.0",
+  "description": "Comprehensive application security review covering identity & access, data access controls, application layer, network infrastructure, secrets, cryptography, audit & monitoring, supply chain, and compliance.",
+  "author": {
+    "name": "spencer"
+  },
+  "license": "MIT",
+  "keywords": ["security", "appsec", "owasp", "audit", "review", "vulnerability", "compliance"]
+}
