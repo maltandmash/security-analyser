@@ -140,6 +140,19 @@ Complete this checklist before every production deployment. Sign off at the bott
 
 ---
 
+## 10. AI Prompt Injection
+
+- [ ] `[CRITICAL]` No `.claude/`, `CLAUDE.md`, or `.cursorrules` files from third-party repos are included without security review
+- [ ] `[CRITICAL]` No prompt injection language found in any user-facing or data-layer files ("ignore previous instructions", system prompt overrides, fake delimiters)
+- [ ] `[HIGH]` All downloaded/cloned repositories scanned for AI configuration files before AI assistants process them
+- [ ] `[HIGH]` No zero-width Unicode characters or bidirectional overrides in source code or configuration files
+- [ ] `[HIGH]` All base64/hex-encoded strings in documentation and config files decoded and inspected
+- [ ] `[HIGH]` Post-install scripts (`package.json`, `setup.py`) reviewed for AI config file creation/modification
+- [ ] `[MEDIUM]` HTML comments in markdown/documentation files reviewed for hidden instructions
+- [ ] `[MEDIUM]` Structured data schemas reviewed for fields that could carry AI-targeting instructions
+
+---
+
 ## Sign-Off
 
 | Field | Value |

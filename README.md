@@ -35,7 +35,7 @@ The skill activates automatically when you ask for a security review. Example tr
 
 | What you say | What happens |
 |-------------|-------------|
-| "Do a security review of this codebase" | Full context assessment across all 9 categories |
+| "Do a security review of this codebase" | Full context assessment across all 10 categories |
 | "Review my authentication implementation" | Deep dive on Identity & Access |
 | "Check my Supabase RLS policies" | Deep dive on Data Access Controls |
 | "Is my JWT implementation secure?" | Focuses on token validation, algorithm, storage |
@@ -45,6 +45,8 @@ The skill activates automatically when you ask for a security review. Example tr
 | "Deep dive on cryptography" | Loads cryptography reference in full |
 | "GDPR compliance check" | Focuses on Compliance & Policy |
 | "Pen test prep — what should I fix?" | Full audit with prioritised remediation |
+| "Check for prompt injection" | Deep dive on AI Prompt Injection |
+| "Scan this downloaded repo for hidden instructions" | AI config file and injection scanning |
 
 ## Security Categories
 
@@ -59,8 +61,9 @@ The skill activates automatically when you ask for a security review. Example tr
 | 7 | [Audit & Monitoring](skills/security-review/references/07-audit-monitoring.md) | Immutable audit logging, access logging, anomaly detection, SIEM integration, privilege escalation alerts |
 | 8 | [Code & Supply Chain](skills/security-review/references/08-code-supply-chain.md) | SAST, DAST, SCA, dependency pinning, container scanning, signed commits, SBOM |
 | 9 | [Compliance & Policy](skills/security-review/references/09-compliance-policy.md) | GDPR/data residency, data retention, consent enforcement, PII tagging, least privilege |
+| 10 | [AI Prompt Injection](skills/security-review/references/10-ai-prompt-injection.md) | Prompt injection detection, hidden instructions, unicode obfuscation, encoded payloads, AI config file scanning, delimiter manipulation, AI supply chain |
 
-The skill also includes a [pre-deployment sign-off checklist](skills/security-review/references/10-pre-deployment-checklist.md) with ~65 items across all categories, each labelled CRITICAL / HIGH / MEDIUM.
+The skill also includes a [pre-deployment sign-off checklist](skills/security-review/references/11-pre-deployment-checklist.md) with ~73 items across all categories, each labelled CRITICAL / HIGH / MEDIUM.
 
 ## Findings Format
 
